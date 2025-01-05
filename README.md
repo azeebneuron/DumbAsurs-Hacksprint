@@ -91,3 +91,6 @@ Test the API endpoints using the provided curl commands in the [API Documentatio
 - Thanks to my amazing teammates: [ashutosh-utsav](https://github.com/ashutosh-utsav), [sarthaksinghgaur](https://github.com/sarthaksinghgaur), [sambhav226](https://github.com/sambhav226)
 - Special thanks to the Hacksprint organizers
 - Inspired by the need for better waste management and environmental awareness tools
+
+## Video Demo
+Watch our platform demonstration here: [EcoConnect Demo Video](https://drive.google.com/file/d/1u77OWWh0wKOiZDfFQjjTvO2u4j-obxvC/view?usp=sharing)
