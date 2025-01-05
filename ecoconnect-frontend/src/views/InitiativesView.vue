@@ -270,7 +270,7 @@ export default {
     async fetchInitiatives() {
       this.loading = true
       try {
-        let url = 'http://localhost:5000/api/initiatives'
+        let url = 'http://localhost:5050/api/initiatives'
         const params = new URLSearchParams()
         
         if (this.filters.location) {
@@ -301,7 +301,7 @@ export default {
     async showParticipantsList(initiativeId) {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/initiatives/${initiativeId}/participants`
+          `http://localhost:5050/api/initiatives/${initiativeId}/participants`
         )
         const initiative = this.initiatives.find(i => i.id === initiativeId)
         if (initiative) {
@@ -320,7 +320,7 @@ export default {
     async createInitiative() {
       this.isSubmitting = true
       try {
-        await axios.post('http://localhost:5000/api/initiatives', this.newInitiative)
+        await axios.post('http://localhost:5050/api/initiatives', this.newInitiative)
         this.showCreateForm = false
         this.resetForm()
         await this.fetchInitiatives()
@@ -336,7 +336,7 @@ export default {
     async joinInitiative(id) {
       this.isJoining = true
       try {
-        await axios.post(`http://localhost:5000/api/initiatives/${id}/join`)
+        await axios.post(`http://localhost:5050/api/initiatives/${id}/join`)
         await this.fetchInitiatives()
         alert('Successfully joined the initiative!')
       } catch (error) {
@@ -349,7 +349,7 @@ export default {
 
     async updateStatus(id, status) {
       try {
-        await axios.put(`http://localhost:5000/api/initiatives/${id}`, {
+        await axios.put(`http://localhost:5050/api/initiatives/${id}`, {
           status: status
         })
         await this.fetchInitiatives()

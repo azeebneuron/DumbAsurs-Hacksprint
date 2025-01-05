@@ -122,10 +122,10 @@ export default {
       try {
         const [wasteResponse, leaderboardResponse, activitiesResponse, initiativesResponse] = 
           await Promise.all([
-            axios.get('http://localhost:5000/api/waste/stats'),
-            axios.get('http://localhost:5000/api/social/leaderboard?timeframe=week'),
-            axios.get('http://localhost:5000/api/social/feed'),
-            axios.get('http://localhost:5000/api/initiatives')
+            axios.get('http://localhost:5050/api/waste/stats'),
+            axios.get('http://localhost:5050/api/social/leaderboard?timeframe=week'),
+            axios.get('http://localhost:5050/api/social/feed'),
+            axios.get('http://localhost:5050/api/initiatives')
           ])
 
         this.wasteStats = wasteResponse.data
