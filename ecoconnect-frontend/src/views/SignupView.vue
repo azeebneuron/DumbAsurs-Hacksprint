@@ -74,7 +74,7 @@
     methods: {
       async handleSignup() {
         try {
-          await axios.post('http://localhost:5000/api/auth/signup', {
+          await axios.post('http://localhost:5050/api/auth/signup', {
             username: this.username,
             email: this.email,
             password: this.password

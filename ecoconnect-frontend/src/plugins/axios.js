@@ -3,7 +3,7 @@
 import axios from 'axios'
 
 // Base URL
-axios.defaults.baseURL = 'http://localhost:5000/api'
+axios.defaults.baseURL = 'http://localhost:5050/api'
 
 // Request interceptor
 axios.interceptors.request.use(

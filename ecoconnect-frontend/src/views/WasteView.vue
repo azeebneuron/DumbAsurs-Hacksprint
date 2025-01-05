@@ -200,7 +200,7 @@ export default {
         const token = localStorage.getItem('token')
         if (!token) throw new Error('No authentication token')
 
-        let url = `http://localhost:5000/api/waste/logs?days=${this.filters.days}`
+        let url = `http://localhost:5050/api/waste/logs?days=${this.filters.days}`
         if (this.filters.category) {
           url += `&category=${this.filters.category}`
         }
@@ -227,7 +227,7 @@ export default {
         if (!token) throw new Error('No authentication token')
 
         const response = await axios.get(
-          `http://localhost:5000/api/waste/stats?days=${this.filters.days}`,
+          `http://localhost:5050/api/waste/stats?days=${this.filters.days}`,
           {
             headers: {
               Authorization: `Bearer ${token}`
@@ -250,7 +250,7 @@ export default {
         if (!token) throw new Error('No authentication token')
 
         await axios.post(
-          'http://localhost:5000/api/waste/log', 
+          'http://localhost:5050/api/waste/log', 
           this.newLog,
           {
             headers: {
@@ -287,7 +287,7 @@ export default {
         if (!token) throw new Error('No authentication token')
 
         await axios.delete(
-          `http://localhost:5000/api/waste/log/${id}`,
+          `http://localhost:5050/api/waste/log/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`

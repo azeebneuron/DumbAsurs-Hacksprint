@@ -165,7 +165,7 @@ export default {
       this.loading = true
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/social/leaderboard?timeframe=${this.selectedPeriod}`
+          `http://localhost:5050/api/social/leaderboard?timeframe=${this.selectedPeriod}`
         )
         this.leaderboard = response.data.leaders
       } catch (error) {
@@ -178,7 +178,7 @@ export default {
     async fetchAchievements() {
       this.loadingAchievements = true
       try {
-        const response = await axios.get('http://localhost:5000/api/social/achievements')
+        const response = await axios.get('http://localhost:5050/api/social/achievements')
         this.achievements = response.data.achievements
       } catch (error) {
         console.error('Error fetching achievements:', error)
@@ -190,7 +190,7 @@ export default {
     async fetchActivityFeed() {
       this.loadingFeed = true
       try {
-        const response = await axios.get('http://localhost:5000/api/social/feed')
+        const response = await axios.get('http://localhost:5050/api/social/feed')
         this.feed = response.data.activities
       } catch (error) {
         console.error('Error fetching activity feed:', error)

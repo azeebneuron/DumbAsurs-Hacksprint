@@ -15,10 +15,17 @@ def create_app():
     # Initialize extensions with app
     db.init_app(app)
     jwt.init_app(app)
-    CORS(app)
+    CORS(app,
+          resources={r"/api/*": {"origins": "http://localhost:8080"}},
+          supports_credentials=True,
+          )
     
     # Register blueprints
     from .routes.auth import auth_bp
+    CORS(auth_bp,
+          resources={r"/api/*": {"origins": "http://localhost:8080"}},
+          supports_credentials=True,
+          )
     from .routes.waste import waste_bp
     from .routes.business import business_bp
     from .routes.social import social_bp

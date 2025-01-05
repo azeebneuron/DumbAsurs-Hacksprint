@@ -258,7 +258,7 @@ export default {
     async fetchBusinesses() {
       this.loading = true
       try {
-        let url = 'http://localhost:5000/api/businesses'
+        let url = 'http://localhost:5050/api/businesses'
         const params = new URLSearchParams()
 
         if (this.filters.category) {
@@ -286,7 +286,7 @@ export default {
           this.businesses.map(async (business) => {
             try {
               const reviewsResponse = await axios.get(
-                `http://localhost:5000/api/businesses/${business.id}/reviews`
+                `http://localhost:5050/api/businesses/${business.id}/reviews`
               )
               business.reviews = reviewsResponse.data.reviews
             } catch (error) {
@@ -309,7 +309,7 @@ export default {
         if (!token) throw new Error('Authentication required')
 
         await axios.post(
-          'http://localhost:5000/api/businesses', 
+          'http://localhost:5050/api/businesses', 
           this.newBusiness,
           {
             headers: {
@@ -335,7 +335,7 @@ export default {
         if (!token) throw new Error('Authentication required')
 
         await axios.post(
-          `http://localhost:5000/api/businesses/${businessId}/review`,
+          `http://localhost:5050/api/businesses/${businessId}/review`,
           this.newReview,
           {
             headers: {
