@@ -2,6 +2,52 @@
 
 EcoConnect is a comprehensive platform that brings together eco-conscious individuals and businesses to track waste management, discover sustainable businesses, and participate in environmental initiatives. The platform features waste tracking, an eco-friendly business directory, social networking, and community initiatives.
 
+---
+
+### 1. **Home Page**
+The **Home Page** provides an overview of EcoConnect's mission and features. It includes a call-to-action for users to join the platform, along with highlights of recent community initiatives and top-performing eco-friendly businesses.
+
+![Home Page](samples/sample0.png)  
+
+
+---
+
+### 2. **Authentication**
+![Authentication](samples/sample1.png)  
+The **Authentication** page allows users to securely log in or sign up. It supports email/password authentication as well as social login options for convenience.
+
+---
+
+### 3. **User Dashboard**
+![User Dashboard](samples/sample2.png)  
+The **User Dashboard** is the central hub for users to track their environmental impact. It displays personalized statistics, recent waste logs, and progress toward sustainability goals.
+
+---
+
+### 4. **Waste Tracking**
+![Waste Tracking](samples/sample3.png)  
+The **Waste Tracking** feature enables users to log and monitor their waste production. Users can categorize waste, view detailed statistics, and filter logs by date range or waste type.
+
+---
+
+### 5. **Community Initiatives**
+![Community Initiatives](samples/sample4.png)  
+The **Community Initiatives** section allows users to discover, join, and create environmental projects. Initiatives are filterable by location, status, and type, making it easy to find relevant opportunities.
+
+---
+
+### 6. **Leaderboard**
+![Leaderboard](samples/sample5.png)  
+The **Leaderboard** showcases top-performing users and businesses based on their environmental contributions. It includes weekly, monthly, and all-time rankings to encourage friendly competition.
+
+---
+
+### 7. **User Profile**
+![User Profile](samples/sample6.png)  
+The **User Profile** page displays a user's achievements, badges, and activity history. It also allows users to manage their settings and connect with others in the community.
+
+---
+
 ## Features
 
 - **Waste Tracking System**
