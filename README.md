@@ -139,4 +139,4 @@ Test the API endpoints using the provided curl commands in the [API Documentatio
 - Inspired by the need for better waste management and environmental awareness tools
 
 ## Video Demo
-Watch our platform demonstration here: [EcoConnect Demo Video](https://drive.google.com/file/d/1u77OWWh0wKOiZDfFQjjTvO2u4j-obxvC/view?usp=sharing)
+Watch our platform demonstration here: [EcoConnect Demo Video](https://drive.google.com/file/d/11fkZwgv7wKoY-fvtrhtrJqISF2r0y8eb/view?usp=share_link)
